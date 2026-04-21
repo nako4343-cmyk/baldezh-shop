@@ -2,10 +2,10 @@ import { useState, useEffect, useRef, useReducer } from "react";
 import {
   ShoppingBag, Heart, Search, X, Plus, Minus, Trash2,
   Package, Truck, ShieldCheck, CreditCard, ChevronDown,
-  ChevronUp, Star, Menu, ArrowRight, Instagram, Send,
+  ChevronUp, Star, Menu, ArrowRight, Send,
   MessageCircle, Lock, Eye, Sparkles
 } from "lucide-react";
-
+import { camera } from 'react-icons/fa';
 /* ═══════════════════════════════════════════
    LOGO — Балдёж logo component
    ═══════════════════════════════════════════ */
@@ -540,7 +540,7 @@ export default function BaldejShop() {
             <p style={{ fontSize: 13, color: "#8A8A9A", marginBottom: 10, fontWeight: 300 }}>info@baldezh.ru</p>
             <p style={{ fontSize: 13, color: "#8A8A9A", marginBottom: 20, fontWeight: 300 }}>8 (800) 555-02-20</p>
             <div style={{ display: "flex", gap: 12 }}>
-              {[Instagram, Send, MessageCircle].map((Icon, i) => (
+              {[camera, Send, MessageCircle].map((Icon, i) => (
                 <div key={i} style={{ width: 36, height: 36, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: "#8A8A9A", transition: "all 0.3s" }}>
                   <Icon size={16} />
                 </div>
